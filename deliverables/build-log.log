@@ -1,0 +1,271 @@
+2024-02-29T13:26:24.1648131Z ##[section]Starting: BuildAndPush
+2024-02-29T13:26:24.1654064Z ==============================================================================
+2024-02-29T13:26:24.1654645Z Task         : Docker
+2024-02-29T13:26:24.1654869Z Description  : Build or push Docker images, login or logout, start or stop containers, or run a Docker command
+2024-02-29T13:26:24.1655162Z Version      : 2.231.0
+2024-02-29T13:26:24.1655370Z Author       : Microsoft Corporation
+2024-02-29T13:26:24.1655599Z Help         : https://aka.ms/azpipes-docker-tsg
+2024-02-29T13:26:24.1655812Z ==============================================================================
+2024-02-29T13:26:24.7412026Z [command]/usr/bin/docker pull node:9
+2024-02-29T13:26:47.9998551Z 9: Pulling from library/node
+2024-02-29T13:26:48.0000010Z d660b1f15b9b: Pulling fs layer
+2024-02-29T13:26:48.0000398Z 46dde23c37b3: Pulling fs layer
+2024-02-29T13:26:48.0000720Z 6ebaeb074589: Pulling fs layer
+2024-02-29T13:26:48.0001027Z e7428f935583: Pulling fs layer
+2024-02-29T13:26:48.0001406Z eda527043444: Pulling fs layer
+2024-02-29T13:26:48.0001715Z f3088daa8887: Pulling fs layer
+2024-02-29T13:26:48.0002019Z 1ded38ff7fdc: Pulling fs layer
+2024-02-29T13:26:48.0002324Z da44c9274f48: Pulling fs layer
+2024-02-29T13:26:48.0002623Z eda527043444: Waiting
+2024-02-29T13:26:48.0002923Z f3088daa8887: Waiting
+2024-02-29T13:26:48.0003215Z 1ded38ff7fdc: Waiting
+2024-02-29T13:26:48.0003998Z da44c9274f48: Waiting
+2024-02-29T13:26:48.0004611Z e7428f935583: Waiting
+2024-02-29T13:26:48.0005431Z 46dde23c37b3: Verifying Checksum
+2024-02-29T13:26:48.0005679Z 46dde23c37b3: Download complete
+2024-02-29T13:26:48.0005911Z 6ebaeb074589: Verifying Checksum
+2024-02-29T13:26:48.0006140Z 6ebaeb074589: Download complete
+2024-02-29T13:26:48.0006366Z d660b1f15b9b: Verifying Checksum
+2024-02-29T13:26:48.0006590Z d660b1f15b9b: Download complete
+2024-02-29T13:26:48.0006817Z eda527043444: Verifying Checksum
+2024-02-29T13:26:48.0007042Z eda527043444: Download complete
+2024-02-29T13:26:48.0007266Z f3088daa8887: Verifying Checksum
+2024-02-29T13:26:48.0007767Z f3088daa8887: Download complete
+2024-02-29T13:26:48.0007992Z 1ded38ff7fdc: Verifying Checksum
+2024-02-29T13:26:48.0008217Z 1ded38ff7fdc: Download complete
+2024-02-29T13:26:48.0008442Z da44c9274f48: Verifying Checksum
+2024-02-29T13:26:48.0008652Z da44c9274f48: Download complete
+2024-02-29T13:26:48.0008876Z e7428f935583: Verifying Checksum
+2024-02-29T13:26:48.0009209Z e7428f935583: Download complete
+2024-02-29T13:26:48.0009441Z d660b1f15b9b: Pull complete
+2024-02-29T13:26:48.0009665Z 46dde23c37b3: Pull complete
+2024-02-29T13:26:48.0009888Z 6ebaeb074589: Pull complete
+2024-02-29T13:26:48.0010108Z e7428f935583: Pull complete
+2024-02-29T13:26:48.0010323Z eda527043444: Pull complete
+2024-02-29T13:26:48.0010540Z f3088daa8887: Pull complete
+2024-02-29T13:26:48.0010756Z 1ded38ff7fdc: Pull complete
+2024-02-29T13:26:48.0010971Z da44c9274f48: Pull complete
+2024-02-29T13:26:48.0011276Z Digest: sha256:cddc729ef8326f7e8966c246ba2e87bad4c15365494ff3d681fa6f022cdab041
+2024-02-29T13:26:48.0011587Z Status: Downloaded newer image for node:9
+2024-02-29T13:26:48.0011834Z docker.io/library/node:9
+2024-02-29T13:26:48.0014418Z [command]/usr/bin/docker inspect node:9
+2024-02-29T13:26:48.0252702Z [
+2024-02-29T13:26:48.5647332Z     {
+2024-02-29T13:26:48.5648193Z         "Id": "sha256:08a8c8089ab128005c42f5273f72a42fe98a2710a2b2ffdc65d55fc2cd78e500",
+2024-02-29T13:26:48.5656135Z         "RepoTags": [
+2024-02-29T13:26:48.5656844Z             "node:9"
+2024-02-29T13:26:48.5657236Z         ],
+2024-02-29T13:26:48.5657596Z         "RepoDigests": [
+2024-02-29T13:26:48.5658039Z             "node@sha256:cddc729ef8326f7e8966c246ba2e87bad4c15365494ff3d681fa6f022cdab041"
+2024-02-29T13:26:48.5658640Z         ],
+2024-02-29T13:26:48.5658996Z         "Parent": "",
+2024-02-29T13:26:48.5659353Z         "Comment": "",
+2024-02-29T13:26:48.5660028Z         "Created": "2018-07-17T05:35:33.628268498Z",
+2024-02-29T13:26:48.5660507Z         "Container": "2ea4bce3972d3348bda270a13d4f9e41dbfa69be10c3150fe337f012d541020d",
+2024-02-29T13:26:48.5661248Z         "ContainerConfig": {
+2024-02-29T13:26:48.5661643Z             "Hostname": "2ea4bce3972d",
+2024-02-29T13:26:48.5662020Z             "Domainname": "",
+2024-02-29T13:26:48.5662381Z             "User": "",
+2024-02-29T13:26:48.5662747Z             "AttachStdin": false,
+2024-02-29T13:26:48.5663121Z             "AttachStdout": false,
+2024-02-29T13:26:48.5663493Z             "AttachStderr": false,
+2024-02-29T13:26:48.5663901Z             "Tty": false,
+2024-02-29T13:26:48.5664275Z             "OpenStdin": false,
+2024-02-29T13:26:48.5664638Z             "StdinOnce": false,
+2024-02-29T13:26:48.5664991Z             "Env": [
+2024-02-29T13:26:48.5665394Z                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+2024-02-29T13:26:48.5665806Z                 "NODE_VERSION=9.11.2",
+2024-02-29T13:26:48.5666182Z                 "YARN_VERSION=1.5.1"
+2024-02-29T13:26:48.5666535Z             ],
+2024-02-29T13:26:48.5668234Z             "Cmd": [
+2024-02-29T13:26:48.5674897Z                 "/bin/sh",
+2024-02-29T13:26:48.5675477Z                 "-c",
+2024-02-29T13:26:48.5676076Z                 "#(nop) ",
+2024-02-29T13:26:48.5676534Z                 "CMD [\"node\"]"
+2024-02-29T13:26:48.5676888Z             ],
+2024-02-29T13:26:48.5677244Z             "ArgsEscaped": true,
+2024-02-29T13:26:48.5677696Z             "Image": "sha256:609cb4806054da33f34d43e9757e88fcf342ddd11b3c3958911a3be63d50902a",
+2024-02-29T13:26:48.5678132Z             "Volumes": null,
+2024-02-29T13:26:48.5678492Z             "WorkingDir": "",
+2024-02-29T13:26:48.5678857Z             "Entrypoint": null,
+2024-02-29T13:26:48.5679217Z             "OnBuild": [],
+2024-02-29T13:26:48.5679567Z             "Labels": {}
+2024-02-29T13:26:48.5679910Z         },
+2024-02-29T13:26:48.5680444Z         "DockerVersion": "17.06.2-ce",
+2024-02-29T13:26:48.5680839Z         "Author": "",
+2024-02-29T13:26:48.5681259Z         "Config": {
+2024-02-29T13:26:48.5682048Z             "Hostname": "",
+2024-02-29T13:26:48.5683785Z             "Domainname": "",
+2024-02-29T13:26:48.5684106Z             "User": "",
+2024-02-29T13:26:48.5684388Z             "AttachStdin": false,
+2024-02-29T13:26:48.5684678Z             "AttachStdout": false,
+2024-02-29T13:26:48.5684975Z             "AttachStderr": false,
+2024-02-29T13:26:48.5685256Z             "Tty": false,
+2024-02-29T13:26:48.5685541Z             "OpenStdin": false,
+2024-02-29T13:26:48.5685823Z             "StdinOnce": false,
+2024-02-29T13:26:48.5686093Z             "Env": [
+2024-02-29T13:26:48.5686411Z                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+2024-02-29T13:26:48.5686743Z                 "NODE_VERSION=9.11.2",
+2024-02-29T13:26:48.5687535Z                 "YARN_VERSION=1.5.1"
+2024-02-29T13:26:48.5687903Z             ],
+2024-02-29T13:26:48.5695710Z             "Cmd": [
+2024-02-29T13:26:48.5696616Z                 "node"
+2024-02-29T13:26:48.5697020Z             ],
+2024-02-29T13:26:48.5697336Z             "ArgsEscaped": true,
+2024-02-29T13:26:48.5697719Z             "Image": "sha256:609cb4806054da33f34d43e9757e88fcf342ddd11b3c3958911a3be63d50902a",
+2024-02-29T13:26:48.5698073Z             "Volumes": null,
+2024-02-29T13:26:48.5698344Z             "WorkingDir": "",
+2024-02-29T13:26:48.5698692Z             "Entrypoint": null,
+2024-02-29T13:26:48.5698972Z             "OnBuild": [],
+2024-02-29T13:26:48.5699246Z             "Labels": null
+2024-02-29T13:26:48.5699507Z         },
+2024-02-29T13:26:48.5699782Z         "Architecture": "amd64",
+2024-02-29T13:26:48.5700061Z         "Os": "linux",
+2024-02-29T13:26:48.5700340Z         "Size": 672841655,
+2024-02-29T13:26:48.5700626Z         "VirtualSize": 672841655,
+2024-02-29T13:26:48.5700916Z         "GraphDriver": {
+2024-02-29T13:26:48.5701189Z             "Data": {
+2024-02-29T13:26:48.5702681Z                 "LowerDir": "/var/lib/docker/overlay2/4dcc08c6008e7a08992f02a8a60b1ec0d16ae8c7cead309e2bc20c72bab07b21/diff:/var/lib/docker/overlay2/9d012b4607af42646422a2a53488f1ef27ff3da34be937f5f1d20dba38656d27/diff:/var/lib/docker/overlay2/c7d29d2acaa81711a34c1165e0e16ba5abe6586ed513218501efdf9893524bb7/diff:/var/lib/docker/overlay2/347f073e01240485c2c4db53fec906a2f20670191471e6c67fd697a5355b50ea/diff:/var/lib/docker/overlay2/810c400ed901a1e6aa32d375414513d7cd00197a3cb4b9904fb79e2e8d9c5072/diff:/var/lib/docker/overlay2/680927c0c31cee0d53dca234a27a83828700a2d7e0c3870b69a244ccb9b31d89/diff:/var/lib/docker/overlay2/b8075fe85be3f9a84c559e0171598c006912e9dd60e9e3207292211772b39178/diff",
+2024-02-29T13:26:48.5703885Z                 "MergedDir": "/var/lib/docker/overlay2/62f375235feedc845772ef276026fe1f4e3805c6a90bed65101f708d1f3f359c/merged",
+2024-02-29T13:26:48.5705236Z                 "UpperDir": "/var/lib/docker/overlay2/62f375235feedc845772ef276026fe1f4e3805c6a90bed65101f708d1f3f359c/diff",
+2024-02-29T13:26:48.5705691Z                 "WorkDir": "/var/lib/docker/overlay2/62f375235feedc845772ef276026fe1f4e3805c6a90bed65101f708d1f3f359c/work"
+2024-02-29T13:26:48.5706047Z             },
+2024-02-29T13:26:48.5706323Z             "Name": "overlay2"
+2024-02-29T13:26:48.5706604Z         },
+2024-02-29T13:26:48.5707942Z         "RootFS": {
+2024-02-29T13:26:48.5708278Z             "Type": "layers",
+2024-02-29T13:26:48.5708567Z             "Layers": [
+2024-02-29T13:26:48.5708926Z                 "sha256:dd1eb1fd7e08dc9bda0cbea31a89196c453cb218bea80ce64eeb19fadc98d262",
+2024-02-29T13:26:48.5709378Z                 "sha256:a42d312a03bb549752cfaf828dca867cb03763699732a584bb4fa119e0130760",
+2024-02-29T13:26:48.5709791Z                 "sha256:858cd8541f7e8b7b5bb9c72e1757f7c3c8d270b7e21dae30579e0df635ddeacf",
+2024-02-29T13:26:48.5756572Z                 "sha256:8451f9fe00162c8ff891c8982c5bf107cccbe1982718ef80565229ee69dd54cf",
+2024-02-29T13:26:48.5757660Z                 "sha256:cbda574aa37a39a4cdf2898aa974efaf2b6035e8a25992eb1914394b209a54fb",
+2024-02-29T13:26:48.5758280Z                 "sha256:e492023cc4f9bce9e608a6a6f2bb9f223167bab8a3d8d01581125a5dedc18524",
+2024-02-29T13:26:48.5758893Z                 "sha256:7695686f75c013796894607078f9629e33e1f22d0ed6b732ebca94db31a41c94",
+2024-02-29T13:26:48.5759744Z                 "sha256:71521673e10519537be4ba58471e53eaf6cf376d84be584810370560bf548d93"
+2024-02-29T13:26:48.5760141Z             ]
+2024-02-29T13:26:48.5760563Z         },
+2024-02-29T13:26:48.5760877Z         "Metadata": {
+2024-02-29T13:26:48.5761559Z             "LastTagTime": "0001-01-01T00:00:00Z"
+2024-02-29T13:26:48.5762068Z         }
+2024-02-29T13:26:48.5762379Z     }
+2024-02-29T13:26:48.5762619Z ]
+2024-02-29T13:26:48.5798178Z [command]/usr/bin/docker build -f /home/vsts/work/1/s/deliverables/Dockerfile --label com.azure.dev.image.system.teamfoundationcollectionuri=https://dev.azure.com/***/ --label com.azure.dev.image.system.teamproject=Test --label com.azure.dev.image.build.repository.name=***/node-hello --label com.azure.dev.image.build.sourceversion=fdb3b2f026aca2e3163ff6d923b5e003d4b1354b --label com.azure.dev.image.build.repository.uri=https://github.com/***/node-hello --label com.azure.dev.image.build.sourcebranchname=master --label com.azure.dev.image.build.definitionname=CI.node-hello-app --label com.azure.dev.image.build.buildnumber=3 --label com.azure.dev.image.build.builduri=vstfs:///Build/Build/17 --label image.base.ref.name=node:9 --label image.base.digest=sha256:cddc729ef8326f7e8966c246ba2e87bad4c15365494ff3d681fa6f022cdab041 -t ***/node-hello-app:latest /home/vsts/work/1/s
+2024-02-29T13:26:48.6753172Z #0 building with "default" instance using docker driver
+2024-02-29T13:26:48.6754329Z 
+2024-02-29T13:26:48.6754788Z #1 [internal] load .dockerignore
+2024-02-29T13:26:48.6755266Z #1 transferring context: 2B done
+2024-02-29T13:26:48.6755670Z #1 DONE 0.0s
+2024-02-29T13:26:48.6755953Z 
+2024-02-29T13:26:48.6756296Z #2 [internal] load build definition from Dockerfile
+2024-02-29T13:26:48.6756729Z #2 transferring dockerfile: 146B done
+2024-02-29T13:26:48.6757139Z #2 DONE 0.0s
+2024-02-29T13:26:48.6757430Z 
+2024-02-29T13:26:48.6757814Z #3 [internal] load metadata for docker.io/library/node:9
+2024-02-29T13:26:48.6758131Z #3 DONE 0.0s
+2024-02-29T13:26:48.6758311Z 
+2024-02-29T13:26:48.6758876Z #4 [internal] load build context
+2024-02-29T13:26:48.6759196Z #4 transferring context: 52.66kB 0.0s done
+2024-02-29T13:26:48.6759492Z #4 DONE 0.0s
+2024-02-29T13:26:48.6759659Z 
+2024-02-29T13:26:48.6760072Z #5 [1/5] FROM docker.io/library/node:9
+2024-02-29T13:26:48.6760489Z #5 DONE 0.0s
+2024-02-29T13:26:48.6760781Z 
+2024-02-29T13:26:48.6761104Z #6 [2/5] WORKDIR /app
+2024-02-29T13:26:48.6761388Z #6 DONE 0.0s
+2024-02-29T13:26:48.6761551Z 
+2024-02-29T13:26:48.6761823Z #7 [3/5] COPY package.json .
+2024-02-29T13:26:48.6762101Z #7 DONE 0.0s
+2024-02-29T13:26:48.6762280Z 
+2024-02-29T13:26:48.6762531Z #8 [4/5] RUN npm install
+2024-02-29T13:26:49.3364346Z #8 0.614 npm notice created a lockfile as package-lock.json. You should commit this file.
+2024-02-29T13:26:49.3365076Z #8 0.616 npm WARN node-hello@1.0.0 No description
+2024-02-29T13:26:49.3365368Z #8 0.616 
+2024-02-29T13:26:49.3365607Z #8 0.616 up to date in 0.056s
+2024-02-29T13:26:49.3372315Z #8 DONE 0.6s
+2024-02-29T13:26:49.3372570Z 
+2024-02-29T13:26:49.3372779Z #9 [5/5] COPY . .
+2024-02-29T13:26:49.3373023Z #9 DONE 0.0s
+2024-02-29T13:26:49.3373161Z 
+2024-02-29T13:26:49.3373396Z #10 exporting to image
+2024-02-29T13:26:49.3373650Z #10 exporting layers
+2024-02-29T13:26:51.4195266Z #10 exporting layers 2.2s done
+2024-02-29T13:26:51.4354980Z #10 writing image sha256:234b63a7f16c6329dd771091b2d3fa1b9823bbb5244463486845cd7b5b1f8466 done
+2024-02-29T13:26:51.4356546Z #10 naming to docker.io/***/node-hello-app:latest done
+2024-02-29T13:26:51.4357122Z #10 DONE 2.2s
+2024-02-29T13:26:51.4512067Z ##[warning]No data was written into the file /home/vsts/work/_temp/task_outputs/build_1709213211447.txt
+2024-02-29T13:26:51.4521880Z [command]/usr/bin/docker images
+2024-02-29T13:26:51.4552591Z [command]/usr/bin/docker push ***/node-hello-app:latest
+2024-02-29T13:26:51.4774350Z REPOSITORY                  TAG         IMAGE ID       CREATED         SIZE
+2024-02-29T13:26:51.4778555Z ***/node-hello-app   latest      234b63a7f16c   2 seconds ago   673MB
+2024-02-29T13:26:51.4791559Z node                        18          39e94893115b   13 days ago     1.09GB
+2024-02-29T13:26:51.4803747Z node                        18-alpine   24d8fcd7167f   13 days ago     132MB
+2024-02-29T13:26:51.4804459Z node                        20          281da7fc7f6f   13 days ago     1.1GB
+2024-02-29T13:26:51.4804982Z node                        20-alpine   df6a39829ab5   13 days ago     137MB
+2024-02-29T13:26:51.4805573Z ubuntu                      22.04       3db8720ecbf5   2 weeks ago     77.9MB
+2024-02-29T13:26:51.4808658Z debian                      10          6c6c8d717457   2 weeks ago     114MB
+2024-02-29T13:26:51.4809304Z debian                      11          52d6bfa40b9a   2 weeks ago     124MB
+2024-02-29T13:26:51.4809708Z moby/buildkit               latest      480495983c47   4 weeks ago     172MB
+2024-02-29T13:26:51.4843131Z alpine                      3.16        d49a5025be10   4 weeks ago     5.54MB
+2024-02-29T13:26:51.4843569Z alpine                      3.17        eaba187917cc   4 weeks ago     7.06MB
+2024-02-29T13:26:51.4843909Z alpine                      3.18        d3782b16ccc9   4 weeks ago     7.33MB
+2024-02-29T13:26:51.4844216Z ubuntu                      20.04       18ca3f4297e7   5 weeks ago     72.8MB
+2024-02-29T13:26:51.4844511Z node                        16          1ddc7e4055fd   5 months ago    909MB
+2024-02-29T13:26:51.4845033Z node                        16-alpine   2573171e0124   6 months ago    118MB
+2024-02-29T13:26:51.4845327Z node                        9           08a8c8089ab1   5 years ago     673MB
+2024-02-29T13:26:51.4845789Z The push refers to repository [docker.io/***/node-hello-app]
+2024-02-29T13:26:52.1134587Z 15a8c5325016: Preparing
+2024-02-29T13:26:52.1135874Z 5ca81fe6ab7a: Preparing
+2024-02-29T13:26:52.1136772Z c71fef7ac7a5: Preparing
+2024-02-29T13:26:52.1137537Z 3de0bfb3d7b7: Preparing
+2024-02-29T13:26:52.1137835Z 71521673e105: Preparing
+2024-02-29T13:26:52.1138179Z 7695686f75c0: Preparing
+2024-02-29T13:26:52.1138454Z e492023cc4f9: Preparing
+2024-02-29T13:26:52.1139047Z cbda574aa37a: Preparing
+2024-02-29T13:26:52.1139317Z 8451f9fe0016: Preparing
+2024-02-29T13:26:52.1139586Z 858cd8541f7e: Preparing
+2024-02-29T13:26:52.1139853Z a42d312a03bb: Preparing
+2024-02-29T13:26:52.1140122Z dd1eb1fd7e08: Preparing
+2024-02-29T13:26:52.1140385Z e492023cc4f9: Waiting
+2024-02-29T13:26:52.1140696Z cbda574aa37a: Waiting
+2024-02-29T13:26:52.1140985Z 8451f9fe0016: Waiting
+2024-02-29T13:26:52.1141265Z 858cd8541f7e: Waiting
+2024-02-29T13:26:52.1141543Z a42d312a03bb: Waiting
+2024-02-29T13:26:52.1141820Z dd1eb1fd7e08: Waiting
+2024-02-29T13:26:52.1142098Z 7695686f75c0: Waiting
+2024-02-29T13:26:53.4507762Z 71521673e105: Layer already exists
+2024-02-29T13:26:54.1366207Z 7695686f75c0: Layer already exists
+2024-02-29T13:26:54.8407094Z e492023cc4f9: Layer already exists
+2024-02-29T13:26:55.5313567Z cbda574aa37a: Layer already exists
+2024-02-29T13:26:56.2065303Z 8451f9fe0016: Layer already exists
+2024-02-29T13:26:56.4741866Z 5ca81fe6ab7a: Pushed
+2024-02-29T13:26:56.7915533Z 15a8c5325016: Pushed
+2024-02-29T13:26:56.8833211Z 858cd8541f7e: Layer already exists
+2024-02-29T13:26:57.0273415Z c71fef7ac7a5: Pushed
+2024-02-29T13:26:57.1634986Z a42d312a03bb: Layer already exists
+2024-02-29T13:26:57.4795865Z 3de0bfb3d7b7: Pushed
+2024-02-29T13:26:57.4931544Z dd1eb1fd7e08: Layer already exists
+2024-02-29T13:27:03.2219059Z latest: digest: sha256:c5f294ddaa5634dccddfa82bddc9e456ea6f191043edf346c443169fe701ce27 size: 2836
+2024-02-29T13:27:03.2278977Z [command]/usr/bin/docker history --format createdAt:{{.CreatedAt}}; layerSize:{{.Size}}; createdBy:{{.CreatedBy}}; layerId:{{.ID}} --no-trunc ***/node-hello-app:latest
+2024-02-29T13:27:03.2464797Z createdAt:2024-02-29T13:26:49Z; layerSize:0B; createdBy:CMD ["npm" "start"]; layerId:sha256:234b63a7f16c6329dd771091b2d3fa1b9823bbb5244463486845cd7b5b1f8466
+2024-02-29T13:27:03.2465881Z createdAt:2024-02-29T13:26:49Z; layerSize:0B; createdBy:EXPOSE map[3000/tcp:{}]; layerId:<missing>
+2024-02-29T13:27:03.2467360Z createdAt:2024-02-29T13:26:49Z; layerSize:43kB; createdBy:COPY . . # buildkit; layerId:<missing>
+2024-02-29T13:27:03.2468433Z createdAt:2024-02-29T13:26:49Z; layerSize:299B; createdBy:RUN /bin/sh -c npm install # buildkit; layerId:<missing>
+2024-02-29T13:27:03.2468969Z createdAt:2024-02-29T13:26:48Z; layerSize:436B; createdBy:COPY package.json . # buildkit; layerId:<missing>
+2024-02-29T13:27:03.2469493Z createdAt:2024-02-29T13:26:48Z; layerSize:0B; createdBy:WORKDIR /app; layerId:<missing>
+2024-02-29T13:27:03.2469984Z createdAt:2018-07-17T05:35:33Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["node"]; layerId:<missing>
+2024-02-29T13:27:03.2471949Z createdAt:2018-07-17T05:35:33Z; layerSize:4.45MB; createdBy:/bin/sh -c set -ex   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz; layerId:<missing>
+2024-02-29T13:27:03.2473199Z createdAt:2018-07-17T05:35:29Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV YARN_VERSION=1.5.1; layerId:<missing>
+2024-02-29T13:27:03.2475068Z createdAt:2018-07-17T05:35:28Z; layerSize:57MB; createdBy:/bin/sh -c ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs; layerId:<missing>
+2024-02-29T13:27:03.2477679Z createdAt:2018-07-17T05:35:21Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  ENV NODE_VERSION=9.11.2; layerId:<missing>
+2024-02-29T13:27:03.2479341Z createdAt:2018-07-17T05:35:21Z; layerSize:136kB; createdBy:/bin/sh -c set -ex   && for key in     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     B9AE9905FFD7803F25714661B63B535A4C206CA9     56730D5401028683275BD23C23EFEFE93C4CFFFE     77984A986EBC2AA786BC0F66B01FBB92821C587A     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600   ; do     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" ||     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" ||     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done; layerId:<missing>
+2024-02-29T13:27:03.2480479Z createdAt:2018-07-17T05:35:19Z; layerSize:335kB; createdBy:/bin/sh -c groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node; layerId:<missing>
+2024-02-29T13:27:03.2482242Z createdAt:2018-07-17T03:08:50Z; layerSize:320MB; createdBy:/bin/sh -c set -ex;  apt-get update;  apt-get install -y --no-install-recommends   autoconf   automake   bzip2   dpkg-dev   file   g++   gcc   imagemagick   libbz2-dev   libc6-dev   libcurl4-openssl-dev   libdb-dev   libevent-dev   libffi-dev   libgdbm-dev   libgeoip-dev   libglib2.0-dev   libjpeg-dev   libkrb5-dev   liblzma-dev   libmagickcore-dev   libmagickwand-dev   libncurses5-dev   libncursesw5-dev   libpng-dev   libpq-dev   libreadline-dev   libsqlite3-dev   libssl-dev   libtool   libwebp-dev   libxml2-dev   libxslt-dev   libyaml-dev   make   patch   xz-utils   zlib1g-dev     $(    if apt-cache show 'default-libmysqlclient-dev' 2>/dev/null | grep -q '^Version:'; then     echo 'default-libmysqlclient-dev';    else     echo 'libmysqlclient-dev';    fi   )  ;  rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2024-02-29T13:27:03.2483670Z createdAt:2018-07-17T03:06:27Z; layerSize:123MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   bzr   git   mercurial   openssh-client   subversion     procps  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2024-02-29T13:27:03.2484505Z createdAt:2018-07-17T03:04:59Z; layerSize:0B; createdBy:/bin/sh -c set -ex;  if ! command -v gpg > /dev/null; then   apt-get update;   apt-get install -y --no-install-recommends    gnupg    dirmngr   ;   rm -rf /var/lib/apt/lists/*;  fi; layerId:<missing>
+2024-02-29T13:27:03.2485309Z createdAt:2018-07-17T03:04:58Z; layerSize:41.1MB; createdBy:/bin/sh -c apt-get update && apt-get install -y --no-install-recommends   ca-certificates   curl   netbase   wget  && rm -rf /var/lib/apt/lists/*; layerId:<missing>
+2024-02-29T13:27:03.2485896Z createdAt:2018-07-17T00:20:48Z; layerSize:0B; createdBy:/bin/sh -c #(nop)  CMD ["bash"]; layerId:<missing>
+2024-02-29T13:27:03.2486532Z createdAt:2018-07-17T00:20:47Z; layerSize:127MB; createdBy:/bin/sh -c #(nop) ADD file:b90e572f7462a23e2e4eda57269941ee7d8f078ca8ab1eefca86927713e13365 in / ; layerId:<missing>
+2024-02-29T13:27:03.2503481Z [command]/usr/bin/docker inspect 234b63a7f16c6329dd771091b2d3fa1b9823bbb5244463486845cd7b5b1f8466 -f {{.RootFS.Layers}}
+2024-02-29T13:27:03.2686593Z [sha256:dd1eb1fd7e08dc9bda0cbea31a89196c453cb218bea80ce64eeb19fadc98d262 sha256:a42d312a03bb549752cfaf828dca867cb03763699732a584bb4fa119e0130760 sha256:858cd8541f7e8b7b5bb9c72e1757f7c3c8d270b7e21dae30579e0df635ddeacf sha256:8451f9fe00162c8ff891c8982c5bf107cccbe1982718ef80565229ee69dd54cf sha256:cbda574aa37a39a4cdf2898aa974efaf2b6035e8a25992eb1914394b209a54fb sha256:e492023cc4f9bce9e608a6a6f2bb9f223167bab8a3d8d01581125a5dedc18524 sha256:7695686f75c013796894607078f9629e33e1f22d0ed6b732ebca94db31a41c94 sha256:71521673e10519537be4ba58471e53eaf6cf376d84be584810370560bf548d93 sha256:3de0bfb3d7b7cef7bb4ef9fa0f23bca2681e1d0e002ac26ccb397dff601a89f4 sha256:c71fef7ac7a54f6fc509995019c40129b51fd781fb7c2c7b616595aff455449c sha256:5ca81fe6ab7a12d5db5bf26b622a00d96b2e241ec406a27276a61dc82b8979dd sha256:15a8c53250167cd876c6a13d044305ba8b20d4d6020bfb944f31d3f8bfb8554f]
+2024-02-29T13:27:03.3322625Z ##[section]Finishing: BuildAndPush
