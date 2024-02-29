@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: node-hello-app
-          image: mithunjn21/node-hello-app:BUILD_NO
+          image: mithunjn21/node-hello-app:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
